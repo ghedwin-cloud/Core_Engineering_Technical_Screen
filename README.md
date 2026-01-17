@@ -33,3 +33,25 @@ A package is considered **heavy** if:
 ```python
 def sort(width, height, length, mass) -> str
 
+## Installation
+
+git clone <your-repo-url>
+cd package-sorter
+
+## Install Dependencies
+
+pip install -r requirements.txt
+
+## Run the program from bash
+
+python
+
+from sorter.sort import sort
+
+print(sort(50, 50, 50, 10))     # STANDARD
+print(sort(150, 20, 20, 5))     # SPECIAL
+print(sort(100, 100, 100, 20))  # REJECTED
+
+## Running Test from bash
+
+pytest
